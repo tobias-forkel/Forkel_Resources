@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_forkel_resources_green_index>
+        <reference name="content">
+            <block type="forkel_resources/adminhtml_green" name="forkel_resources_green" />
+        </reference>
+    </adminhtml_forkel_resources_green_index>
+    <adminhtml_forkel_resources_blue_index>
+        <reference name="content">
+            <block type="forkel_resources/adminhtml_blue" name="forkel_resources_blue" />
+        </reference>
+    </adminhtml_forkel_resources_blue_index>
+    <adminhtml_forkel_resources_customers_index>
+        <reference name="content">
+            <block type="forkel_resources/adminhtml_customers" name="forkel_resources_customers" />
+        </reference>
+    </adminhtml_forkel_resources_customers_index>
+</layout>

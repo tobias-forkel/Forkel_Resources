@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Forkel Resources
+ *
+ * @category    Forkel
+ * @package     Forkel_Resources
+ * @copyright   Copyright (c) 2015 Tobias Forkel (http://www.tobiasforkel.de)
+ * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ */
+ -->
+
+<config>
+    <modules>
+        <Forkel_Resources>
+            <version>0.0.1</version>
+        </Forkel_Resources>
+    </modules>
+    <global>
+
+        <blocks>
+            <forkel_resources>
+                <class>Forkel_Resources_Block</class>
+            </forkel_resources>
+        </blocks>
+
+        <helpers>
+            <forkel_resources>
+                <class>Forkel_Resources_Helper</class>
+            </forkel_resources>
+        </helpers>
+
+        <models>
+            <forkel_resources>
+                <class>Forkel_Resources_Model</class>
+                <resourceModel>forkel_resources_resource</resourceModel>
+            </forkel_resources>
+            <forkel_resources_resource>
+                <class>Forkel_Resources_Model_Resource</class>
+                <entities>
+                    <green>
+                        <table>forkel_resources_green</table>
+                    </green>
+                    <blue>
+                        <table>forkel_resources_blue</table>
+                    </blue>
+                </entities>
+            </forkel_resources_resource>
+        </models>
+
+        <resources>
+            <forkel_resources_setup>
+                <setup>
+                    <module>Forkel_Resources</module>
+                </setup>
+            </forkel_resources_setup>
+        </resources>
+
+    </global>
+    <admin>
+
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Forkel_Resources after="Mage_Adminhtml">Forkel_Resources_Adminhtml</Forkel_Resources>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+
+    </admin>
+    <adminhtml>
+
+        <layout>
+            <updates>
+                <forkel_resources>
+                    <file>forkel/resources.xml</file>
+                </forkel_resources>
+            </updates>
+        </layout>
+
+    </adminhtml>
+</config>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Forkel Resources
+ *
+ * @category    Forkel
+ * @package     Forkel_Resources
+ * @copyright   Copyright (c) 2015 Tobias Forkel (http://www.tobiasforkel.de)
+ * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ */
+ -->
+
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <forkel>
+                        <children>
+                            <forkel_resources translate="title" module="forkel_resources">
+                                <title>Resources</title>
+                                <sort_order>500</sort_order>
+                                <children>
+                                    <green translate="title">
+                                        <title>Green</title>
+                                        <sort_order>10</sort_order>
+                                    </green>
+                                    <blue translate="title">
+                                        <title>Blue</title>
+                                        <sort_order>20</sort_order>
+                                    </blue>
+                                    <customers translate="title">
+                                        <title>Customers</title>
+                                        <sort_order>30</sort_order>
+                                    </customers>
+                                </children>
+                            </forkel_resources>
+                        </children>
+                    </forkel>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <forkel>
+            <children>
+                <forkel_resources translate="title">
+                    <title>Resources</title>
+                    <sort_order>500</sort_order>
+                    <children>
+                        <green translate="title">
+                            <title>Green</title>
+                            <sort_order>10</sort_order>
+                            <action>adminhtml/forkel_resources_green/index</action>
+                        </green>
+                        <blue translate="title">
+                            <title>Blue</title>
+                            <sort_order>20</sort_order>
+                            <action>adminhtml/forkel_resources_blue/index</action>
+                        </blue>
+                        <customers translate="title">
+                            <title>Customers</title>
+                            <sort_order>30</sort_order>
+                            <action>adminhtml/forkel_resources_customers/index</action>
+                        </customers>
+                    </children>
+                </forkel_resources>
+            </children>
+        </forkel>
+    </menu>
+</config>
